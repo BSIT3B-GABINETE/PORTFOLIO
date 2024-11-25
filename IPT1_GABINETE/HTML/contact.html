@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="../CSS/contact.css">
+<script src="../JS/contact.js"></script>
+</head>
+<body>
+
+    <!-- Banner Section -->
+    <header class="banner-header">
+        <div class="logo">
+            <img src="../PICS/logoo.png" width="100" height="40 " alt="Logo"> <!-- Placeholder for logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="web.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <h2>Contact Us</h2>
+
+        <div class="contact-form-container">
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h3>Online Inquiry Register</h3>
+                <form action="submit_inquiry.php" method="post">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <input type="submit" value="Submit Inquiry">
+                </form>
+            </div>
+
+            <!-- Contact Details Section -->
+            <div class="contact-details">
+                <!-- Email Box -->
+                <div class="detail-box">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> shanesentillesisgabinete@gmail.com</p>
+                </div>
+
+                <!-- Contact Number Box -->
+                <div class="detail-box">
+                    <i class="fas fa-phone"></i>
+                    <p><strong>Contact No:</strong> +639072360536</p>
+                </div>
+
+                <!-- Location Box -->
+                <div class="detail-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Location:</strong> Blk. 41 A lot 13 Phase 3 Area 2 
+                   <br> Longos Malabon City</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="socials">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+    </section>
+
+</body>
+</html>

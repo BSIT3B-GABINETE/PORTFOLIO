@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    position: relative;
+}
+
+.banner-header {
+    background-color: #46153D;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner-header .logo img {
+    width: 80px;
+}
+
+.banner-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.banner-header nav ul li {
+    margin-left: 20px;
+}
+
+.banner-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.banner-header nav ul li a:hover {
+    color: #FF0DEE;
+    transition: color 0.3s ease;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+.intro-text h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+.intro-text h2 {
+    font-size: 3rem;
+    color: #FF0DEE;
+    margin-top: -20px;
+}
+
+.intro-text h3 {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.highlight {
+    color: #FF0DEE;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #FF0DEE;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF0DEE;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.profile-picture {
+    background-color: #FF0DEE;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 5px rgba(255, 13, 238, 0.7);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+        #wipe-effect {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #111; 
+            z-index: 9999;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out, transform 0.7s ease-out;
+            transform: scale(0);
+        }
+
+        .wipe-active {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        .hero {
+            position: relative;
+            z-index: 1;
+        }
+
+
+        .hero .intro-text {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }

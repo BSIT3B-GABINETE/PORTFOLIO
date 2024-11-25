@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.banner-header {
+    background-color: #46153D;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner-header .logo img {
+    width: 80px;
+}
+
+.banner-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.banner-header nav ul li {
+    margin-left: 20px;
+}
+
+.banner-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.banner-header nav ul li a:hover {
+    color: #FF0DEE;
+    transition: color 0.3s ease;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-picture {
+    background-color: #FF0DEE;
+    padding: 20px;
+    width: 300px;
+    height: 288px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 5px rgba(255, 13, 238, 0.7);
+    margin-right: 30px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-text {
+    max-width: 60%;
+}
+
+.about-text h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    color: #FF0DEE;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.about-container {
+    transform: translateX(-100%); 
+    opacity: 0; 
+    transition: transform 0.5s ease-in-out, opacity 1.5s ease-in-out; 
+}
+
+.about-container.visible {
+    transform: translateX(0); 
+    opacity: 1; 
+}
